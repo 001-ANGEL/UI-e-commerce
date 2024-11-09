@@ -1,0 +1,59 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/breakpoints";
+@import "./partials/responsive";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-color-body;
+}
+
+
+header {
+    @include headerStyles;
+}
+
+
+main {
+    width: 1200px;
+
+    .title-section {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
+
+footer {
+    //320px to 360px
+    @include footer-tiny;
+
+    //360px to 480px
+    @include footer-small;
+
+    //480px to 768px
+    @include footer-medium;
+
+    //Tablet
+    @include footer-tablet;
+
+    //desktop
+    @include footer-desktop;
+}

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41a8033687.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+
+    <!--                                        Todo: Seccion del Header                           -->
+
+    <header>
+        <div class="header-content">
+            <div class="box-logo">
+                <!-- <img src="../img/logo.webp" alt="Aqui se encuentra el logotipo de la pagina"> -->
+                <h1>Productos IT</h1>
+            </div>
+
+            <nav id="navVisible" class="nav">
+
+                <button id="btnClose">
+                    <i class="fa-solid fa-x"></i>
+                </button>
+
+                <ul class="ul-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productsCategories">Productos</a></li>
+                    <li><a href="./Acercade.html">A cerca de</a></li>
+                    <li><a href="./Equipo.html">Equipo</a></li>
+                </ul>
+            </nav>
+
+            <div class="box-favorite-cart">
+
+                <!-- carrito -->
+                <div class="shopping-cart">
+                    <a href="#" aria-label="Carrito de Compras">
+                        <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Favoritos -->
+                <div class="favorite-products">
+                    <a href="#" aria-label="Productos Favoritos">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Menu hamburguesa -->
+                <button id="btnOpen" class="btn-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+
+    </header>
+
+
+    <!--                                      Todo: Seccion del Main                                  -->
+
+    <main >
+        <!-- Creacion de la seccoin Hero -->
+        <section class="hero">
+            
+            <div class="hero-content">
+                <h2>Innovación y <span>Tecnología</span></h2>
+                <h3>Explora Nuestros Productos Electrónicos</h3>
+                <p>Encuentra los dispositivos más innovadores y útiles en nuestra amplia gama de productos
+                    electrónicos.</p>
+
+                <div class="button-hero">
+                    <button class="btn-primary">
+                        <a href="#productos">Explora Ahora!</a>
+                    </button>
+
+                    <button class="btn-secundary">
+                        <a href="#">A cerca de</a>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-img">
+                <div class="img"></div>
+            </div>
+
+        </section>
+
+
+
+        <!--                        Todo:Categoria de los Productos                                     -->
+        <section class="products-categories" id="productsCategories">
+
+            <!-- Categoria de productos -->
+            <div class="title-products">
+                <h3>¡Elige tu categoría favorita!</h3>
+            </div>
+
+            <!-- Elegir donde posicionar el titulo de la categoria, si abajo o arriba -->
+
+            <div class="categories">
+
+                <div class="products-home">
+                    <div class="product-img">
+                        <a href="./productosCategoria.html">
+                            <img src="/img/landing/hogar1.webp" alt="imagen relacioando con la categoria">
+                        </a>
+                    </div>
+                    <div class="title">
+                        <h3>Hogar</h3>
+                    </div>
+                </div>
+
+                <div class="products-appliances">
+                    <div class="product-img">
+                       <a href="./productosCategoria.html">
+                        <img src="/img/landing/hogar2.webp" alt="imagen relacioando con la categoria">
+                       </a>
+                    </div>
+                    <div class="title">
+                        <h3>Electrodomésticos</h3>
+                    </div>
+                </div>
+
+                <div class="products-kitchen">
+                    <div class="product-img">
+                        
+                        <a href="./productosCategoria.html">
+                            <img src="/img/landing/hogar3.webp" alt="imagen relacioando con la categoria">
+                        </a>
+
+                    </div>
+                    <div class="title">
+                        <h3>Cocina</h3>
+                    </div>
+                </div>
+
+                <div class="products-audio">
+                    <div class="product-img">
+                       
+                        <a href="./productosCategoria.html">
+                            <img src="/img/landing/hogar4.webp" alt="imagen relacioando con la categoria">
+                        </a>
+
+                    </div>
+                    <div class="title">
+                        <h3>Audio</h3>
+                    </div>
+                </div>
+
+                <div class="products-video">
+                    <div class="product-img">
+                        
+                        <a href="./productosCategoria.html">
+                            <img src="/img/landing/hogar5.webp" alt="imagen relacioando con la categoria">
+                        </a>
+
+                    </div>
+                    <div class="title">
+                        <h3>Video</h3>
+                    </div>
+                </div>
+
+                <div class="products-gaming">
+                    <div class="product-img">
+                        
+                        <a href="./productosCategoria.html">
+                            <img src="/img/landing/hogar6.webp" alt="imagen relacioando con la categoria">
+                        </a>
+
+                    </div>
+                    <div class="title">
+                        <h3>Gaming</h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- todo:                       Filtros                      -->
+
+        <section class="filter-product">
+            <!-- Productos Varios -->
+            <h3>¡Los mejores productos!</h3>
+
+            <div class="header-filter">
+
+                <button id="btnOpenMenu">Orden:
+                    <span>Popularidad 
+                        <i class="fa-solid fa-chevron-down" id="iconUp"></i></span>
+                </button>
+
+                <div class="filter-content " id="menuFilter">
+
+                    <button id="btnAll">Todo</button>
+                    <button id="btnOffers">En oferta</button>
+                    <button id="btnNewProducts">Lo mas reciente</button>
+                    <button id="btnBestProducts">Lo mas vendido</button>
+                    <button id="btnGiftCard">Tarjetas de Regalo</button>
+                    
+                </div>
+
+                </div>
+        </section>
+
+        <!--todo: Seccion de productos del filtro -->
+
+        <section class="products">
+
+            <div class="product-content">
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product1.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product2.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product3.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product4.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product5.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product6.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product7.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product8.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product1.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product2.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product3.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product4.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <!-- todo: Seccion informatica a cerca de ofertas y calidad que ofrecemos -->
+
+        <section class="information">
+            <!-- textos que informativos sobre descuentos y calidad de los productos -->
+            <div class="information-content">
+                <div class="text1">
+                    <p>Compra uno y obtén el segundo al 50% de descuento. <span>¡No te lo pierdas!</span></p>
+                </div>
+
+                <div class="text2">
+                    <p>Calidad Excepcional en Cada Producto: <span>¡Solo lo Mejor para Ti!</span></p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- todo: Mas productos -->
+
+        <section class="products">
+
+            <div class="product-content">
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product5.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product6.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product7.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+                <div class="product product-desktop" id="product">
+                    <!-- Aqui ira el js/backend para la creacion de cada producto -->
+                    <div id="img-product" class="img-product">
+                        <a href="./producto.html">
+                            <img src="/img/landing/product8.webp" alt="Imagen del respectivo producto">
+                        </a>
+                    </div>
+
+                    <div class="name-product">
+                        <p id="nameProduct">Nombre del producto</p>
+                    </div>
+
+                    <div class="description-product">
+                        <p id="descriptionProduct">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Exercitationem</p>
+                    </div>
+
+                    <div class="price-and-rating">
+                        <p id="priceProduct">Q 299.00</p>
+                        
+                        <!-- Esto es una simulacion de puntuacion -->
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                  <div class="button-products">
+                    <button type="submit" id="btnAddCart">Agregar al Carrito</button>
+
+                    <button id="btnAddFavorites">
+                        <i class="fa-solid fa-heart" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  
+                </div>
+
+            </div>
+        </section>
+
+        <!-- todo: Opiniones del usuario -->
+
+        <section class="opinion">
+            <!-- Opiniones sobre los usuarios -->
+
+            <h3>Opiniones</h3>
+            <div class="opinion-user">
+
+                <div class="opinion1">
+                    <div class="img-user-opinion">
+                        <img src="/img/landing/user1.webp" alt="imagen de la persona opinando">
+                    </div>
+                    <div class="name-people-opinion">
+                        <p>Juan Rabanero</p>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                    <div class="comment-user-opinion">
+                        <p>Es fácil encontrar lo que busco y el proceso de compra es rápido y sencillo.</p>
+                    </div>
+                </div>
+
+                <div class="opinion2">
+                    <div class="img-user-opinion">
+                        <img src="/img/landing/user2.webp" alt="imagen de la persona opinando">
+                    </div>
+                    <div class="name-people-opinion">
+                        <p>Rodrigo Gomez</p>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                    <div class="comment-user-opinion">
+                        <p>Comprar en esta web ha sido generalmente positivo.</p>
+                    </div>
+                </div>
+
+                <div class="opinion3 opinion3-desktop">
+                    <div class="img-user-opinion">
+                        <img src="/img/landing/user3.webp" alt="imagen de la persona opinando">
+                    </div>
+                    <div class="name-people-opinion">
+                        <p>Pedro Martínez</p>
+                    </div>
+
+                    <div class="rating">
+                        <div class="rating">
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+                            <span class="star"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>   
+                        </div>
+                    </div>
+
+                    <div class="comment-user-opinion">
+                        <p>La web es increíble! La navegación es muy intuitiva, y me encanta cómo las categorías están organizadas.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <!--                            Todo: Creacion del Footer                   -->
+    <footer>
+        <div class="footer-sections">
+
+            <div class="logo-footer-txt">
+                <h3>Productos IT</h3>
+            </div>
+
+
+            <div class="contact-footer">
+                <h3>Creadores</h3>
+                <p><b>Angel</b> - Front-end</p>
+                <p><b>Bryan</b> - Back-end</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Productos IT. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>

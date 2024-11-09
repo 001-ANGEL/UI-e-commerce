@@ -1,0 +1,62 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/breakpoints";
+@import "./partials/responsive";
+@import "../sass/landingPage/responsive";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    scroll-behavior: smooth;
+}
+
+
+// todo: Header
+
+header {
+    @include headerStyles;
+}
+
+
+// todo: Main
+main {
+ 
+    //320px to 360px
+    @include main-320px;
+
+    //360px to 414px
+    @include main-414px;
+
+    //414px to 480px
+    @include main-480px;
+    
+     //480px to 768px
+     @include main-768px;
+
+     //display tablet
+     @include main-tablet;
+
+     //display desktop
+     @include main-desktop;
+}
+
+// todo: footer
+
+footer {
+        //320px to 360px
+        @include footer-tiny;
+
+        //360px to 480px
+        @include footer-small;
+    
+        //480px to 768px
+        @include footer-medium;
+    
+        //Tablet
+        @include footer-tablet;
+    
+        //desktop
+        @include footer-desktop;
+}

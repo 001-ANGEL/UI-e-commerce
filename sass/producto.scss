@@ -1,0 +1,64 @@
+//Estilos generales para todo el documento
+
+//La importacion de las demas hojas de estilo de sass
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/breakpoints";
+@import "./partials/responsive";
+
+//Estilos globales
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    scroll-behavior: smooth;
+}
+
+//Estilos para el body
+body {
+    background-color: $bg-color-body;
+}
+
+
+// Estilos para el header
+
+header {
+    @include headerStyles;
+}
+
+//Estilos para main
+main {
+    //Responsive 320px
+    @include responsive-main-mobile-320px;
+
+    //Responsive 360px
+    @include responsive-main-mobile-360px;
+
+    //Responsive para 480px to 768px
+    @include responsive-main-mobile-480px;
+
+    //Responsive para tablet
+    @include responsive-tablet;
+
+    //Responsive desktop
+    @include responsive-desktop;
+}
+
+//Estilos del Footer
+footer {
+    //320px to 360px
+    @include footer-tiny;
+
+    //360px to 480px
+    @include footer-small;
+
+    //480px to 768px
+    @include footer-medium;
+
+    //Tablet
+    @include footer-tablet;
+
+    //desktop
+    @include footer-desktop;
+}

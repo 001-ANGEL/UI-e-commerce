@@ -1,0 +1,528 @@
+@import "./partials/variables";
+@import "./partials/mixins";
+@import "./partials/breakpoints";
+@import "./partials/responsive";
+@import "../sass/landingPage/responsive";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+    scroll-behavior: smooth;
+}
+
+
+// todo: Header
+
+header {
+    @include headerStyles;
+}
+
+
+main {
+    margin: 7rem auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .introduccion {
+        width: 1200px;
+        gap: 1rem;
+        margin: auto;
+        background: linear-gradient(255grad, rgb(117, 172, 255), rgb(255, 114, 137));
+        padding: 2rem 1rem;
+
+        h2 {
+            font-weight: 700;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .grupo {
+        width: 1200px;
+        margin: 1rem auto;
+
+        .grupo-imagen1 {
+            width: 100%;
+            height: 25rem;
+            background-image: url(../img/equipo/imgfondo1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .grupo-imagen2 {
+            width: 100%;
+            height: 25rem;
+            background-image: url(../img/equipo/imgfondo2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .grupo-imagen3 {
+            width: 100%;
+            height: 25rem;
+            background-image: url(../img/equipo/imgfondo3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .grupo-imagen4 {
+            width: 100%;
+            height: 25rem;
+            background-image: url(../img/equipo/imgfondo4.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+
+        .titulo-overlay {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;   
+
+            h3 {
+                padding: 3rem;
+                box-shadow: 0 0px 100px 0 rgb(255, 255, 255);
+                color: white;
+                font-size: 3rem;
+                background-color: rgba(0, 0, 0, 0.9);
+                border-radius: 10px;   
+            }
+        }
+
+        p {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+
+        }
+
+        ul {
+            margin-top: 1rem;
+            li {
+                margin-top: .5rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+    @include display-tiny {
+        margin: 1rem auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .introduccion {
+            width: 100%;
+            gap: 1rem;
+            margin: auto;
+            background: linear-gradient(255grad, rgb(117, 172, 255), rgb(255, 114, 137));
+            padding: 2rem 1rem;
+    
+            h2 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+    
+        .grupo {
+            width: 100%;
+            margin: 1rem auto;
+    
+            .grupo-imagen1 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen2 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen3 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen4 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo4.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+    
+            .titulo-overlay {
+                width: 100%;
+                height: 100%;  
+
+                h3 {
+                    height: 100%;
+                    border-radius: 0;
+                    width: 100%;
+                    box-shadow: none;
+                    color: white;
+                    font-size: 2rem;
+                    background-color: rgba(0, 0, 0, 0.9); 
+                    @include displayFlexCenter;
+                }
+            }
+    
+            p {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                padding: 0 5%;
+            }
+    
+            ul {
+                padding: 0 5%;
+                margin-top: 1rem;
+                li {
+                    margin-top: .5rem;
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    @include display-small {
+        margin: 1rem auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .introduccion {
+            width: 100%;
+            gap: 1rem;
+            margin: auto;
+            background: linear-gradient(255grad, rgb(117, 172, 255), rgb(255, 114, 137));
+            padding: 2rem 1rem;
+    
+            h2 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+    
+        .grupo {
+            width: 100%;
+            margin: 1rem auto;
+    
+            .grupo-imagen1 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen2 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen3 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen4 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo4.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+    
+            .titulo-overlay {
+                width: 100%;
+                height: 100%;  
+
+                h3 {
+                    height: 100%;
+                    border-radius: 0;
+                    width: 100%;
+                    box-shadow: none;
+                    color: white;
+                    font-size: 2rem;
+                    background-color: rgba(0, 0, 0, 0.9); 
+                    @include displayFlexCenter;
+                }
+            }
+    
+            p {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                padding: 0 5%;
+            }
+    
+            ul {
+                padding: 0 5%;
+                margin-top: 1rem;
+                li {
+                    margin-top: .5rem;
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    @include display-medium {
+        margin: 1rem auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .introduccion {
+            width: 100%;
+            gap: 1rem;
+            margin: auto;
+            background: linear-gradient(255grad, rgb(117, 172, 255), rgb(255, 114, 137));
+            padding: 2rem 1rem;
+    
+            h2 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+    
+        .grupo {
+            width: 100%;
+            margin: 1rem auto;
+    
+            .grupo-imagen1 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen2 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen3 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen4 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo4.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+    
+            .titulo-overlay {
+                width: 100%;
+                height: 100%;  
+
+                h3 {
+                    height: 100%;
+                    border-radius: 0;
+                    width: 100%;
+                    box-shadow: none;
+                    color: white;
+                    font-size: 2rem;
+                    background-color: rgba(0, 0, 0, 0.9); 
+                    @include displayFlexCenter;
+                }
+            }
+    
+            p {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                padding: 0 5%;
+            }
+    
+            ul {
+                padding: 0 5%;
+                margin-top: 1rem;
+                li {
+                    margin-top: .5rem;
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+    @include display-tablet {
+        margin: 1rem auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .introduccion {
+            width: 100%;
+            gap: 1rem;
+            margin: auto;
+            background: linear-gradient(255grad, rgb(117, 172, 255), rgb(255, 114, 137));
+            padding: 2rem 1rem;
+    
+            h2 {
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 1rem;
+            }
+        }
+    
+        .grupo {
+            width: 100%;
+            margin: 1rem auto;
+    
+            .grupo-imagen1 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo1.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen2 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo2.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen3 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo3.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+    
+            .grupo-imagen4 {
+                width: 100%;
+                height: 20rem;
+                background-image: url(../img/equipo/imgfondo4.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            
+    
+            .titulo-overlay {
+                width: 100%;
+                height: 100%;  
+
+                h3 {
+                    height: 100%;
+                    border-radius: 0;
+                    width: 100%;
+                    box-shadow: none;
+                    color: white;
+                    font-size: 2rem;
+                    background-color: rgba(0, 0, 0, 0.9); 
+                    @include displayFlexCenter;
+                }
+            }
+    
+            p {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                padding: 0 5%;
+            }
+    
+            ul {
+                padding: 0 5%;
+                margin-top: 1rem;
+                li {
+                    margin-top: .5rem;
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+// todo: footer
+
+footer {
+    //320px to 360px
+    @include footer-tiny;
+
+    //360px to 480px
+    @include footer-small;
+
+    //480px to 768px
+    @include footer-medium;
+
+    //Tablet
+    @include footer-tablet;
+
+    //desktop
+    @include footer-desktop;
+}

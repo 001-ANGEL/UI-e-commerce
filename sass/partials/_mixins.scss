@@ -1,0 +1,373 @@
+@import "./breakpoints";
+
+// Aqui ira el codigo que se puede reutilizar
+
+@mixin displayFlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// Estilos del header para el header
+@mixin headerStyles {
+    @include displayFlexCenter;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #936add;
+
+    .header-content {
+        @include displayFlexCenter;
+        justify-content: space-between;
+        min-width: 1200px;
+        height: 90px;
+
+        h1 {
+            font-weight: 900;
+            color: white;
+        }
+
+        nav {
+
+            ul {
+                @include displayFlexCenter;
+                list-style: none;
+
+                li a {
+                    text-decoration: none;
+                    color: white;
+                    margin: 20px;
+                    font-size: 20px;
+                    padding: 5px 12px;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: #B39DDB;
+                        color: white;
+                        transition: .2s;
+                    }
+
+                }
+
+
+            }
+        }
+
+        #btnOpen,
+        #btnClose {
+            display: none
+        }
+
+        .box-favorite-cart {
+            @include displayFlexCenter;
+            gap: 20px;
+
+            .shopping-cart,
+            .favorite-products {
+
+                font-size: 1.2rem;
+
+                .fa-cart-shopping,
+                .fa-heart {
+                    color: black;
+
+                    &:hover {
+                        color: #fff;
+                        transition: .2s;
+
+                    }
+                }
+
+
+            }
+
+            button {
+                border: none;
+                outline: none;
+                // Acordarese quitarlo en desktop-laptop
+                background-color: transparent;
+
+                .fa-bars {
+                    color: #000;
+                    font-size: 20px;
+                }
+            }
+        }
+
+
+        //responsive 320px
+        @include display-tiny {
+            @include header-menu;
+
+            h1 {
+                color: white;
+                font-size: 1.3rem;
+            }
+
+            .nav {
+                @include nav-menu;
+                padding: 2rem 2rem 0 4rem;
+            }
+
+            //Clase creado en js
+            .ul-visible {
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+            .box-favorite-cart {
+                gap: 20px;
+
+                .shopping-cart,
+                .favorite-products,
+                .btn-menu {
+                    
+                    .fa-cart-shopping,
+                    .fa-heart,
+                    .fa-bars {
+                        color: white;
+                        font-size: 1rem;
+
+                        &:hover {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //Responsive 480px
+        @include display-small {
+          @include header-menu;
+
+            h1 {
+                color: white;
+                font-size: 1.8rem;
+            }
+
+            nav {               
+                padding: 2rem 2rem 80rem 4rem;
+                @include nav-menu;
+            }
+
+            //Clase creado en js
+            .ul-visible {
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+            .box-favorite-cart {
+                gap: 20px;
+
+                .shopping-cart,
+                .favorite-products,
+                .btn-menu {
+                    font-size: 1.4rem;
+
+                    .fa-cart-shopping,
+                    .fa-heart,
+                    .fa-bars {
+                        color: white;
+                        font-size: 1rem;
+
+                        &:hover {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        //Responsive para 768px
+        @include display-medium {
+           @include header-menu;
+
+            h1 {
+                color: white;
+                font-size: 2rem;
+            }
+
+            nav {
+                padding: 15rem 5rem 100rem 10rem;
+               @include nav-menu;
+
+               .ul-list {
+                gap: 2rem;
+                
+                    a {
+                        font-size: 2rem;
+                    }
+               }
+            }
+
+            //Clase creado en js
+            .ul-visible {
+                opacity: 1;
+                visibility: visible;
+            }
+
+
+            .box-favorite-cart {
+                gap: 35px;
+
+                .shopping-cart,
+                .favorite-products,
+                .btn-menu {
+
+
+                    .fa-cart-shopping,
+                    .fa-heart,
+                    .fa-bars {
+                        color: white;
+                        font-size: 1.4rem;
+
+                        &:hover {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+
+        }
+
+         //Responsive tablet
+         
+         @include display-tablet {
+            min-width: 100%;
+            padding: 0 5%;
+
+            .box-logo {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
+
+            ul {
+                li a {
+                    margin: 0px !important;
+                }
+            }
+         }
+    }
+
+    @include display-tiny {
+        position: static;
+    }
+    @include display-small {
+        position: static;
+    }
+    @include display-medium {
+        position: static;
+    }
+    @include display-tablet {
+        position: static;
+    }
+
+}
+
+//Estilos del nav para el menu hamburguesa 
+@mixin nav-menu {
+    opacity: 0;
+    visibility: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(147, 85, 165);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    z-index: 99;
+
+    .ul-list {
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+    }
+
+    .ul-list a {
+        color: white;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
+
+//Estilos del header con el nav 
+@mixin header-menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #936add;
+    padding: 0 5%;
+    min-width: 100%;
+
+    #btnOpen,
+    #btnClose {
+        display: block;
+    }
+
+    #btnClose {
+        font-size: 20px;
+        color: #000;
+        padding: 6px 14px;
+        background-color: white;
+        outline: none;
+        border: none;
+
+    }
+
+}
+
+
+//  todo: Estilos para la landign page
+
+
+@mixin style-categories {
+    @include displayFlexCenter;
+    flex-direction: column;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
+
+
+    .product-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+        img {
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .title {
+        width: 100%;
+        height: auto;
+        h3 {
+            text-align: center;
+        }
+    }
+}
+
